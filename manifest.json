@@ -7,15 +7,27 @@
     "description": "A Firefox extension for quickly viewing the total size of a website",
   
     "icons": {
-      
+      "48": "img/siteSize48.png"
     },
   
+    "browser_action": {
+      "default_icon": "img/siteSize48.png",
+      "theme_icons": [{
+          "size": 32
+      }],
+      "default_title": "SiteSize",
+      "default_popup": "popup/ui.html"
+    },
+
     "content_scripts": [
       {
         "matches": ["*://*/*"],
         "js": ["siteSize.js"]
       }
-    ]
-  
+    ],
+
+    "background": {
+      "scripts": ["background.js"]
+    }
   }
   
