@@ -1,0 +1,21 @@
+{
+
+    "manifest_version": 2,
+    "name": "Site Size",
+    "version": "0.1",
+  
+    "description": "A Firefox extension for quickly viewing the total size of a website",
+  
+    "icons": {
+      
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["siteSize.js"]
+      }
+    ]
+  
+  }
+  
