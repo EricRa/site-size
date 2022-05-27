@@ -1,0 +1,17 @@
+html {
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+
+.inline-para {
+    display: inline-block;
+}
